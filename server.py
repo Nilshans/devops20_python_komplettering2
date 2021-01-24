@@ -38,10 +38,10 @@ class Response:
         rand_bit = random.getrandbits(1)
         self.rain = bool(rand_bit)
         if self.rain == True:
-            message = 'There will be rain tomorrow'
+            message = 'True'
         else:
             self.rain = False
-            message = 'You wont need an umbrella tomorrow'
+            message = 'False'
         return message
 
     def getLuckyNum(self):
